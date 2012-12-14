@@ -1,0 +1,11 @@
+article {
+  position: relative;
+
+  time {
+    @include media($desktop) {
+      position: absolute;
+      right: 100%;
+      padding-right: 35px;
+    }
+  }
+}

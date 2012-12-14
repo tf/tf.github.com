@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{page.title}} - tf.github.com</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <section>
+      {% include header.html %}
+
+      {% assign post = page %}
+      {% include post.html %}
+
+      <footer>
+        {% include more.html %}
+        {% include other_posts.html %}
+      </footer>
+    </section>
+  </body>
+</html>

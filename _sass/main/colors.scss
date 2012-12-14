@@ -1,0 +1,15 @@
+$text-color: #333;
+
+body {
+  background: #f7f2f2 image-url('background_light.png') top left repeat;
+  color: #333;
+}
+
+time {
+  color: #666;
+}
+
+-footer {
+  background: #f7f2f2 image-url('background_dark.png') top left repeat;
+  color: #ddd;
+}

@@ -1,0 +1,209 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+body > section {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body > section:before, body > section:after {
+    content: " ";
+    display: table; }
+  body > section:after {
+    clear: both; }
+
+header,
+article,
+footer {
+  margin-left: 8.5298%;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  header:last-child,
+  article:last-child,
+  footer:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 480px) {
+    header,
+    article,
+    footer {
+      margin-left: 25.58941%;
+      display: block;
+      float: left;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      header:last-child,
+      article:last-child,
+      footer:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 480px) {
+  footer #more {
+    display: block;
+    float: left;
+    margin-right: 4.11092%;
+    width: 25.63506%; }
+    footer #more:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 480px) {
+  footer #other {
+    display: block;
+    float: left;
+    margin-right: 4.11092%;
+    width: 70.25402%; }
+    footer #other:last-child {
+      margin-right: 0; } }
+
+/* News Cycle */
+body {
+  font-family: "Droid Serif", serif;
+  font-size: 18px;
+  line-height: 2; }
+
+h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+hgroup h2 {
+  font-family: "Droid Serif", serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic; }
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 36px; }
+  @media screen and (min-width: 480px) {
+    h2 {
+      margin-top: 108px; } }
+  h2 a {
+    text-decoration: none; }
+
+h3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 54px;
+  margin-bottom: 18px; }
+
+p, ul, ol {
+  margin: 0 0 36px 0; }
+
+li {
+  padding-left: 10px; }
+
+pre {
+  background-color: #fff;
+  padding: 18px;
+  margin-top: -18px;
+  margin-bottom: 18px;
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 1.5; }
+
+a:active,
+a:hover {
+  color: #1b69b6; }
+
+a {
+  color: #666; }
+
+body {
+  background: #f7f2f2 url("../images/background_light.png") top left repeat;
+  color: #333; }
+
+time {
+  color: #666; }
+
+-footer {
+  background: #f7f2f2 url("../images/background_dark.png") top left repeat;
+  color: #ddd; }
+
+header {
+  line-height: 1; }
+  header hgroup {
+    position: relative; }
+  header h1 a:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    background: url("../images/logo.png") top left no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.7;
+    left: 0;
+    top: -45px;
+    width: 40px;
+    height: 40px; }
+    @media screen and (min-width: 480px) {
+      header h1 a:before {
+        left: -100px;
+        top: 0;
+        width: 64px;
+        height: 64px; } }
+  header h1 {
+    padding-top: 0.3em;
+    margin: 2.8em 0 0.3em 0; }
+    @media screen and (min-width: 480px) {
+      header h1 {
+        margin: 2em 0 0.3em 0; } }
+  header h2 {
+    margin: 0 0 1.8em 0;
+    color: #444; }
+  header a {
+    text-decoration: none;
+    color: #333333; }
+
+article {
+  position: relative; }
+  @media screen and (min-width: 480px) {
+    article time {
+      position: absolute;
+      right: 100%;
+      padding-right: 35px; } }
+
+footer {
+  position: relative; }
+  footer ul {
+    padding: 0;
+    list-style: none; }
+  footer li {
+    padding: 0; }
+  footer #more a {
+    position: relative; }
+  footer #more a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    left: -65px;
+    top: 50%;
+    margin-top: -17px;
+    background-size: 35px 35px;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  footer #more a:hover:before {
+    opacity: 0.5; }
+  footer #more a.twitter:before {
+    background-image: url("../images/twitter.png"); }
+  footer #more a.atom:before {
+    background-image: url("../images/atom.png");
+    background-size: 45px 45px; }
+  footer #more a.github:before {
+    background-image: url("../images/github.png"); }

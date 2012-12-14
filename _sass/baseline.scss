@@ -1,0 +1,23 @@
+$visual-baseline-grid-height: 0 !default; // Display the baseline grid
+
+@if $visual-baseline-grid-height > 0 {
+  html {
+    position: relative;
+  }
+  html:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+
+    @include background-image(linear-gradient(transparent 0%, transparent 95%, #eee 100%));
+    @include background-size(100% $visual-baseline-grid-height);
+
+    background-position-y: 32px;
+  }
+}

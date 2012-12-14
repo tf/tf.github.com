@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+body > section {
+  @include outer-container;
+}
+
+header,
+article,
+footer {
+  @include shift(1);
+  @include span-columns(10);
+
+  @include media($desktop) {
+    @include shift(3);
+    @include span-columns(7);
+  }
+}
+
+footer #more {
+  @include media($desktop) {
+    @include span-columns(2 of 7);
+  }
+}
+
+footer #other {
+  @include media($desktop) {
+    @include span-columns(5 of 7);
+  }
+}

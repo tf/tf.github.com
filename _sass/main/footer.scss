@@ -1,0 +1,50 @@
+footer {
+  position: relative;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  #more {
+    a {
+      position: relative;
+    }
+
+    a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 35px;
+      width: 35px;
+      left: -65px;
+      top: 50%;
+      margin-top: -17px;
+      background-size: 35px 35px;
+      opacity: 0.2;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    a:hover:before {
+      opacity: 0.5;
+    }
+
+    a.twitter:before {
+      background-image: image-url('twitter.png');
+    }
+
+    a.atom:before {
+      background-image: image-url('atom.png');
+      background-size: 45px 45px;
+    }
+
+    a.github:before {
+      background-image: image-url('github.png');
+    }
+  }
+}
