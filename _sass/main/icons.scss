@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+
+@include font-face('entypo', '../fonts/entypo');
+
+@mixin icon($font, $char) {
+  &:before {
+    font-family: $font;
+    content: $char;
+  }
+}
+
+@mixin stderr-icon  { @include icon('entypo', '\1f500'); }
+
+@mixin feed-icon    { @include icon('entypo', '\E73A'); }
+@mixin twitter-icon { @include icon('entypo', '\F309'); }
+@mixin github-icon  { @include icon('entypo', '\F300'); }
+
+@mixin cc-icon  { @include icon('entypo', '\e7a5\e7a6'); }
+
+@mixin icon-in-margin-or-right($font-size: 23px, $left: -45px) {
+  position: relative;
+
+  &:before {
+    display: block;
+    position: absolute;
+    font-size: $font-size;
+    line-height: 1;
+
+    top: 50%;
+    margin-top: -$font-size / 2;
+
+    width: $font-size;
+    text-align: center;
+
+    left: 150px;
+
+    @include media($desktop) {
+      left: $left;
+    }
+  }
+}
+
+@mixin icon-in-margin($font-size: 23px, $left: -45px, $top: 50%) {
+  position: relative;
+
+  &:before {
+    display: block;
+    font-size: $font-size;
+
+    width: $font-size;
+    text-align: center;
+    text-decoration: none;
+
+    @include media($desktop) {
+      position: absolute;
+      left: $left;
+      top: $top;
+
+      line-height: 1;
+      margin-top: -$font-size / 2;
+    }
+  }
+}

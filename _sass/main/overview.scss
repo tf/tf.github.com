@@ -1,0 +1,12 @@
+.overview {
+  ul {
+    margin-top: $baseline-grid-height * 3;
+    padding: 0;
+  }
+
+  li {
+    padding: 0;
+    list-style: none;
+    margin-top: $baseline-grid-height;
+  }
+}

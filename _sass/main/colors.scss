@@ -1,0 +1,29 @@
+$text-color: #333;
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+time {
+  color: #444;
+}
+
+a:active,
+a:hover {
+  color: #1b69b6;
+}
+
+a {
+  color: #666;
+}
+
+#license {
+  color: #bbb;
+
+  a,
+  a:active,
+  a:hover {
+    color: #bbb;
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{page.title}} - stderr.timfischbach.de</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <section>
+      {% include header.html %}
+
+      {% assign post = page %}
+      {% include post.html %}
+
+      <footer>
+        {% include more.html %}
+        {% include other_posts.html %}
+        {% include license.html %}
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+$serif: 'Droid Serif', serif;
+$sans-serif: 'PT Sans', sans-serif;
+
+body {
+  font-family: $serif;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+h1 {
+  font-family: $sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+hgroup h2 {
+  font-family: $serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h2 {
+  font-family: $sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: $baseline-grid-height * 1;
+
+  @include media($desktop) {
+    font-size: 40px;
+    margin-top: $baseline-grid-height * 3;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h3 {
+  font-family: $sans-serif;
+  font-size: $font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: $baseline-grid-height * 1.5;
+  margin-bottom: $baseline-grid-height * 0.5;
+}
+
+p, ul, ol {
+  margin: 0 0 $baseline-grid-height 0;
+}
+
+li {
+  padding-left: 10px;
+}
+
+pre {
+  background-color: #fff;
+  padding: $baseline-grid-height * 0.5;
+  margin-top: -$baseline-grid-height * 0.5;
+  margin-bottom: $baseline-grid-height * 0.5;
+
+  opacity: 0.7;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#license {
+  margin: $baseline-grid-height 0;
+  font-size: 15px;
+  line-height: 1.5;
+
+  a {
+    text-decoration: none;
+  }
+}

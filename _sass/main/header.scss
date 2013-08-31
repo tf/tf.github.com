@@ -1,0 +1,48 @@
+header {
+  line-height: 1;
+
+  hgroup {
+    position: relative;
+  }
+
+
+  h1 a:before {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: -40px;
+
+    font-size: 40px;
+    color: #444;
+
+    @include media($desktop) {
+      font-size: 50px;
+      left: -85px;
+      top: 5px;
+    }
+  }
+
+  h1 {
+    padding-top: 0.3em;
+    margin: 2.8em 0 0.3em 0;
+
+    @include media($desktop) {
+      margin: 2em 0 0.3em 0;
+    }
+
+    a {
+      @include stderr-icon;
+    }
+  }
+
+  h2 {
+    margin: 0 0 2.3em 0;
+    color: #444;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

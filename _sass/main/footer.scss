@@ -1,0 +1,36 @@
+footer {
+  position: relative;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  #more {
+
+    a {
+      @include icon-in-margin-or-right;
+    }
+
+    a.twitter {
+      @include twitter-icon;
+    }
+
+    a.atom {
+      @include feed-icon;
+    }
+
+    a.github {
+      @include github-icon;
+    }
+  }
+
+  #license {
+    @include cc-icon;
+    @include icon-in-margin($left: -63px);
+  }
+}

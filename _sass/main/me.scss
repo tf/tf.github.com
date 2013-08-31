@@ -1,0 +1,32 @@
+#me {
+  position: relative;
+  padding-left: 20%;
+  padding-top: 5%;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 0;
+    margin: $baseline-grid-height * 2;
+  }
+
+  a {
+    display: block;
+    @include icon-in-margin($font-size: 100px, $left: -130px, $top: 100%);
+  }
+
+  a.blog {
+    @include stderr-icon;
+  }
+
+  a.twitter {
+    @include twitter-icon;
+  }
+
+  a.github {
+    @include github-icon;
+  }
+}

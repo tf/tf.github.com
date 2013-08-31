@@ -1,0 +1,26 @@
+$font-size: 18px;
+$line-height: 2;
+
+$visual-grid-opacity: 1;
+// $visual-grid: true;
+// $visual-baseline-grid-height: $font-size * $line-height;
+$baseline-grid-height: $font-size * $line-height;
+
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'baseline';
+
+$mobile: new-breakpoint(max-width 480px, 12);
+$desktop: new-breakpoint(min-width 480px, 12);
+
+@import 'main/icons';
+@import 'main/grid';
+@import 'main/typography';
+@import 'main/colors';
+
+@import 'main/header';
+@import 'main/overview';
+@import 'main/post';
+@import 'main/footer';
+
+@import 'main/me';
