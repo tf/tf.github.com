@@ -1,7 +1,12 @@
 #me {
-  position: relative;
   padding-left: 20%;
   padding-top: 5%;
+  height: 100%;
+
+  h2 {
+    margin-top: 0;
+    margin-left: -58px;
+  }
 
   ul {
     padding: 0;
@@ -13,9 +18,9 @@
     margin: $baseline-grid-height * 2;
   }
 
-  a {
+  li a {
     display: block;
-    @include icon-in-margin($font-size: 100px, $left: -130px, $top: 100%);
+    @include icon-in-margin($font-size: 100px, $left: -130px, $top: 125%);
   }
 
   a.blog {
@@ -28,5 +33,12 @@
 
   a.github {
     @include github-icon;
+  }
+
+  #license {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    margin: 0;
   }
 }

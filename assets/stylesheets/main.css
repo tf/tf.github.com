@@ -263,29 +263,32 @@ footer {
           margin-top: -11.5px; } }
 
 #me {
-  position: relative;
   padding-left: 20%;
-  padding-top: 5%; }
+  padding-top: 5%;
+  height: 100%; }
+  #me h2 {
+    margin-top: 0;
+    margin-left: -58px; }
   #me ul {
     padding: 0;
     list-style: none; }
   #me li {
     padding: 0;
     margin: 72px; }
-  #me a {
+  #me li a {
     display: block;
     position: relative; }
-    #me a:before {
+    #me li a:before {
       display: block;
       font-size: 100px;
       width: 100px;
       text-align: center;
       text-decoration: none; }
       @media screen and (min-width: 480px) {
-        #me a:before {
+        #me li a:before {
           position: absolute;
           left: -130px;
-          top: 100%;
+          top: 125%;
           line-height: 1;
           margin-top: -50px; } }
   #me a.blog:before {
@@ -297,3 +300,8 @@ footer {
   #me a.github:before {
     font-family: "entypo";
     content: "\F300"; }
+  #me #license {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    margin: 0; }
