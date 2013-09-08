@@ -209,7 +209,8 @@ article {
     article time {
       position: absolute;
       right: 100%;
-      padding-right: 35px; } }
+      padding-right: 35px;
+      white-space: nowrap; } }
 
 footer {
   position: relative; }
