@@ -27,6 +27,10 @@ footer {
     a.github {
       @include github-icon;
     }
+
+    a.google {
+      @include google-icon;
+    }
   }
 
   #license {

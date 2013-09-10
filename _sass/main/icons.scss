@@ -14,6 +14,7 @@
 @mixin feed-icon    { @include icon('entypo', '\E73A'); }
 @mixin twitter-icon { @include icon('entypo', '\F309'); }
 @mixin github-icon  { @include icon('entypo', '\F300'); }
+@mixin google-icon  { @include icon('entypo', '\f30f'); }
 
 @mixin cc-icon  { @include icon('entypo', '\e7a5\e7a6'); }
 

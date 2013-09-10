@@ -243,6 +243,9 @@ footer {
   footer #more a.github:before {
     font-family: "entypo";
     content: "\F300"; }
+  footer #more a.google:before {
+    font-family: "entypo";
+    content: "\f30f"; }
   footer #license {
     position: relative; }
     footer #license:before {
