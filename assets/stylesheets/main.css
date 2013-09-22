@@ -28,6 +28,7 @@ body > section {
 
 header,
 article,
+.comments,
 footer {
   margin-left: 8.5298%;
   display: block;
@@ -36,11 +37,13 @@ footer {
   width: 82.94039%; }
   header:last-child,
   article:last-child,
+  .comments:last-child,
   footer:last-child {
     margin-right: 0; }
   @media screen and (min-width: 480px) {
     header,
     article,
+    .comments,
     footer {
       margin-left: 25.58941%;
       display: block;
@@ -49,6 +52,7 @@ footer {
       width: 57.35098%; }
       header:last-child,
       article:last-child,
+      .comments:last-child,
       footer:last-child {
         margin-right: 0; } }
 
@@ -141,6 +145,10 @@ pre {
   line-height: 1.5; }
   #license a {
     text-decoration: none; }
+
+.comments {
+  margin-top: 36px;
+  margin-bottom: 36px; }
 
 body {
   background: #fff;
