@@ -1,7 +1,7 @@
 <section id="other">
   <h3>Other Posts</h3>
   <ul class="posts">
-    {% for post in site.related_posts %}
+    {% for post in site.related_posts limit: 4 %}
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
