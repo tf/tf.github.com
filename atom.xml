@@ -7,7 +7,7 @@ layout: nil
  <link href="http://stderr.timfischbach.de/atom.xml" rel="self"/>
  <link href="http://stderr.timfischbach.de/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://stderr.timfischbach.de</id>
+ <id>http://stderr.timfischbach.de/</id>
 
  <author>
    <name>Tim Fischbach</name>
