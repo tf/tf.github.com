@@ -47,7 +47,7 @@ three components:
   
 For all of this the application's `.env.example` file becomes the
 primary source of truth. Only variables explained there can be used in
-the code or passed to tasks like `env:set`. The gem even parses the
+the code or passed to tasks like `env:set`. The gem also parses the
 description comments to generate helpful error messages.  A typical
 `.env.example` file looks like this:
 
